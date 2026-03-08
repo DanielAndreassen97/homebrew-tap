@@ -3,7 +3,7 @@ cask "frefresh" do
   name "frefresh"
   desc "Interactive CLI for refreshing tables in Fabric semantic models"
   homepage "https://github.com/DanielAndreassen97/frefresh"
-  version "1.1.0"
+  version "1.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "frefresh" do
   on_macos do
     on_intel do
       url "https://github.com/DanielAndreassen97/frefresh/releases/download/v#{version}/frefresh_darwin_amd64.tar.gz"
-      sha256 "54323aba67a06150e2cc19831b3e35323180df04c8d6df4b8084ce65a8839d83"
+      sha256 "472647ea2dfd8e17fc262b6663ed995cac20eb20c02bd899332d94d866cb8f66"
     end
     on_arm do
       url "https://github.com/DanielAndreassen97/frefresh/releases/download/v#{version}/frefresh_darwin_arm64.tar.gz"
-      sha256 "ed1e9b9db698edd3ee3199c7783fa9a887f6e845425d2e633faa0e36834b0e77"
+      sha256 "eba953d59106b740288f304f49fbcd601f84ff71659bcf91164686782b61cb44"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/DanielAndreassen97/frefresh/releases/download/v#{version}/frefresh_linux_amd64.tar.gz"
-      sha256 "9dbd9e8331a30ddaf79257a7bf4d34893dcec7de41f34dd9829d696bf4cbff58"
+      sha256 "a04ff817c809822b407c3560731070ca8bbc6c71bf9db6afbe5de265da121c8d"
     end
     on_arm do
       url "https://github.com/DanielAndreassen97/frefresh/releases/download/v#{version}/frefresh_linux_arm64.tar.gz"
-      sha256 "c5535bdead592337cbd4e55b57ff387a110d2fd6f29b67275e5b305eb34ca051"
+      sha256 "920aec270b6d152c1e9c467e6a6907fd4460e15b5e65c41daad81d652d3ec16f"
     end
   end
 
