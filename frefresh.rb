@@ -5,20 +5,20 @@
 class Frefresh < Formula
   desc "Interactive CLI for refreshing tables in Fabric semantic models"
   homepage "https://github.com/DanielAndreassen97/frefresh"
-  version "1.3.0"
+  version "1.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DanielAndreassen97/frefresh/releases/download/v1.3.0/frefresh_darwin_amd64.tar.gz"
-      sha256 "a5d04467127e0d152a72d239375a7379fca6d5dee5e445082ab0a87480645082"
+      url "https://github.com/DanielAndreassen97/frefresh/releases/download/v1.4.0/frefresh_darwin_amd64.tar.gz"
+      sha256 "cc3d4fc9683bf9acf0b2cf00f020285cf05949efc16a6be4d4f38fe534a4ede6"
 
       define_method(:install) do
         bin.install "frefresh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DanielAndreassen97/frefresh/releases/download/v1.3.0/frefresh_darwin_arm64.tar.gz"
-      sha256 "e639da0d5ee04161480bdfb36ae5c6f58caddc4caa6b0d44436fd1d2cec92c92"
+      url "https://github.com/DanielAndreassen97/frefresh/releases/download/v1.4.0/frefresh_darwin_arm64.tar.gz"
+      sha256 "03a214f85f1e57990dd9dcbb5d1c6aa6b2e16da1ea9015fe0b141903ce1fd25c"
 
       define_method(:install) do
         bin.install "frefresh"
@@ -28,15 +28,15 @@ class Frefresh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DanielAndreassen97/frefresh/releases/download/v1.3.0/frefresh_linux_amd64.tar.gz"
-      sha256 "c2116a8cc2a6e2c37392aa988c470a17d8ef442d650189d3274f06f5ad6aed38"
+      url "https://github.com/DanielAndreassen97/frefresh/releases/download/v1.4.0/frefresh_linux_amd64.tar.gz"
+      sha256 "21b91c6c2333829ec975b5fa546e33557c63fc5d2b419b00a3622a5e411c26c3"
       define_method(:install) do
         bin.install "frefresh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DanielAndreassen97/frefresh/releases/download/v1.3.0/frefresh_linux_arm64.tar.gz"
-      sha256 "7df27811587d5364d6819f44c427ce544d4ae79a019fba0a42f59bc901ffaee1"
+      url "https://github.com/DanielAndreassen97/frefresh/releases/download/v1.4.0/frefresh_linux_arm64.tar.gz"
+      sha256 "4c706e7ac6ff32af0eb6c50c15b2504cb2e3425cc7ec411bb4c24b1c37c39998"
       define_method(:install) do
         bin.install "frefresh"
       end
