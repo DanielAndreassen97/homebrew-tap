@@ -5,21 +5,21 @@
 class Futils < Formula
   desc "Interactive CLI for working with Microsoft Fabric — run notebooks, move items, manage workspaces"
   homepage "https://github.com/DanielAndreassen97/futils"
-  version "0.8.2"
+  version "0.8.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DanielAndreassen97/futils/releases/download/v0.8.2/futils_darwin_amd64.tar.gz"
-      sha256 "f80f3a7ce1af5ad77c1357ba1ca70cb9cc256446e8e8b8899ad7a64375fb2cc2"
+      url "https://github.com/DanielAndreassen97/futils/releases/download/v0.8.3/futils_darwin_amd64.tar.gz"
+      sha256 "eb467b868c114f3a37b8ad5352d3f260910b86bb8ddc47e48c0625b943ed3e18"
 
       define_method(:install) do
         bin.install "futils"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DanielAndreassen97/futils/releases/download/v0.8.2/futils_darwin_arm64.tar.gz"
-      sha256 "b585269ce5c5437ad4769f5bbc0bc0ddb41b91536af2804378fe3c331cf665c6"
+      url "https://github.com/DanielAndreassen97/futils/releases/download/v0.8.3/futils_darwin_arm64.tar.gz"
+      sha256 "4045fab2431a2542e01dd2554711ed138367162b20e3db26d0e6146379f53303"
 
       define_method(:install) do
         bin.install "futils"
@@ -29,15 +29,15 @@ class Futils < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DanielAndreassen97/futils/releases/download/v0.8.2/futils_linux_amd64.tar.gz"
-      sha256 "4bdef8bf4a4415f4f981b9c2681dd87637c3eb5e21149fad61494da830c02b4f"
+      url "https://github.com/DanielAndreassen97/futils/releases/download/v0.8.3/futils_linux_amd64.tar.gz"
+      sha256 "fafe08a66ec693f2df06ea1105b79fe79d4667a6cb9c62a48c956645d0c4240d"
       define_method(:install) do
         bin.install "futils"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DanielAndreassen97/futils/releases/download/v0.8.2/futils_linux_arm64.tar.gz"
-      sha256 "94fdd84c0480996eec3b3f4fe170678ccdae0b3e27cfd8b68f04925b4f339ce3"
+      url "https://github.com/DanielAndreassen97/futils/releases/download/v0.8.3/futils_linux_arm64.tar.gz"
+      sha256 "81afacc3dd385c986c60fa9c97124123b833c7995d563b3508645c83754f435a"
       define_method(:install) do
         bin.install "futils"
       end
